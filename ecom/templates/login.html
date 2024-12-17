@@ -1,0 +1,22 @@
+
+{% extends 'layouts/main.html' %}
+{% load static %}
+{% block css %}
+<style>
+
+</style>
+{% endblock css %}
+{% block body %}
+{% csrf_token %}
+<form>
+<h2>Login Form</h2>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter username">
+<br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter password">
+<br>
+<button type="submit" onclick="login()">Login</button>
+</form>
+
+{% endblock body %}
